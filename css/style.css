@@ -9,6 +9,9 @@
 
 :root{
    --orange-1: #FA9021;
+   --orange-2:#E87D0E;
+   --orange-3:#FA8305;
+   --orange-4:#FB9E3C;
 }
 
 html{
@@ -29,7 +32,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
+     flex-wrap: wrap;
     max-width: 1440px;
     margin: 0 auto;
     padding: 20px 8px;
@@ -68,4 +71,90 @@ header nav ul a.contact{
     padding: 0px 20px;
     height: 40px;
 }
+
+
+
+
+/* Hero Section */
+#hero{
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-between;
+    gap: 20px;
+
+    padding-top: 80px;
+
+    max-width: 1440px;
+    margin: 0 auto;
+    /* flex-wrap: wrap; */
+}
+
+#hero .left{
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+
+#hero .left span{
+   color: var(--orange-2);
+
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+#hero .left h1{
+    font-size: 5rem;
+    line-height: 155%;
+    color: #fff;
+}
+
+#hero .left p{
+    color: #fff;
+    font-weight: 500;
+    line-height: 200%;
+    font-size: 1.6rem;
+}
+
+#hero .left button{
+   height: 53px;
+   width: 195px;
+   border-radius: 40px;
+   background: linear-gradient(92.48deg, var(--orange-3) 2.08%, var(--orange-4) 117.25%);
+
+
+   font-size: 1.6rem;
+   color: #fff;
+   font-weight: 500;
+   line-height: 100%;
+
+}
+
+
+#hero .right{
+    display: flex;
+    align-items: center;
+}
+
+#hero .right img{
+    max-width: 714px;
+    max-height: 604px;
+    object-fit: cover;
+    animation-name: hero-img;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes hero-img{
+    from {
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(-15px);
+    }
+}
+
+
 
