@@ -74,8 +74,13 @@ header nav ul a.contact{
 
 
 
+main{
+       max-width: 1440px;
+    margin: 0 auto;
+}
 
 /* Hero Section */
+
 #hero{
     display: flex;
     /* align-items: center; */
@@ -84,8 +89,7 @@ header nav ul a.contact{
 
     padding-top: 80px;
 
-    max-width: 1440px;
-    margin: 0 auto;
+ 
     /* flex-wrap: wrap; */
 }
 
@@ -154,6 +158,22 @@ header nav ul a.contact{
     to{
         transform: translateY(-15px);
     }
+}
+
+
+
+/* Camos */
+#camos h1{
+    text-align: center;
+    color: #fff;
+
+    font-size: 25rem;
+    font-weight: 700;
+
+    background: linear-gradient(179.71deg, #838383 -6.1%, rgba(0, 0, 0, 0) 99.75%);
+
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }
 
 
