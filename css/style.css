@@ -37,7 +37,8 @@ header{
     align-items: center;
     justify-content: space-between;
      flex-wrap: wrap;
-    max-width: 1440px;
+    /* max-width: 1440px; */
+    max-width: 1222px;
     margin: 0 auto;
     padding: 20px 8px;
 }
@@ -167,7 +168,7 @@ main{
 
 
 /* Sections */
-#trending,#about{
+#trending,#about,#hero,#video,#project{
     margin-top: 80px;
     max-width: 1184px;
     margin: 80px auto;
